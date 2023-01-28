@@ -3,17 +3,17 @@
  * Classe per il calcolo dell'area del trapezio.
  * 
  * <b>@author Dhaskallo</b>
- * @version 1.0
+ * @versione 0
  */
 public class Trapezio {
-    private double baseMaggiore;
+    private float baseMaggiore;
     /** Base maggiore del trapezio */
-    private double baseMinore;
+    private float baseMinore;
     /** Base minore del trapezio */
-    private double altezza;
+    private float altezza;
     /** Altezza del trapezio */
 
-    public Trapezio(double baseMaggiore, double baseMinore, double altezza) {
+    public Trapezio(float baseMaggiore, float baseMinore, float altezza) {
         this.baseMaggiore = baseMaggiore;
         this.baseMinore = baseMinore;
         this.altezza = altezza;
@@ -25,7 +25,7 @@ public class Trapezio {
      * @param h altezza del trapezio
      */
 
-    public double calcolaArea() {
+    public float calcolaArea() {
         return (baseMaggiore + baseMinore) * altezza / 2;
     }
     /**
@@ -35,7 +35,8 @@ public class Trapezio {
 
     public static void main(String[] args) {
         Trapezio t1 = new Trapezio(3,2,1);
-        double area = t1.calcolaArea();
+       
+        float area = t1.calcolaArea();
         System.out.println("L'area del trapezio è: " + area);
         t1 = new Trapezio(6,5,5);
         area = t1.calcolaArea();
